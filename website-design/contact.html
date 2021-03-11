@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        iframe {
+            align-items: center;
+        }
+        #map {
+            float: center;
+        }
+        .top {
+            list-style-type: none;
+            margin: 0pt;
+            padding: 0pt;
+            overflow: hidden;
+            background-color: #999999;
+        }
+        .tab, #about {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 14px;
+            padding-top: 14px;
+            text-decoration: none;
+        }
+        .tab a:hover:not(.active) {
+            color: blue;
+        }
+        .active {
+            background-color: red;
+        }
+        #about {
+            float: right;
+        }
+        .sitemap {
+            color: darkgrey;
+            text-align: center;
+            
+        }
+        .bottomnav {
+            background: lightgrey;
+            padding-bottom: 3px;
+            padding-top: 3px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul class="top">
+            <li class="tab"><a href="index.html">Home</a></li>
+            <li class="tab"><a href="development.html">New Product Development</a></li>
+            <li class="tab"><a href="salesandmarketing.html">Sales and Marketing</a></li>
+            <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
+            <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
+            <li id="about"><a class = "active" href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+<h1>Contact Us</h1>
+<hr>
+<h2>Contact Details</h2> 
+
+<div class="info"></div>
+<p>
+    <div>NB Aero</div>
+    <div>New Britian, CT</div>
+    <div>United States</div>
+
+    <div>Email: nbaero@gamil.com</div>
+    <div>Tel: (860)977-4575</div>
+</p>
+</div>
+
+<div id="map">
+<h2>Where to Find Us</h2>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47677.70310773357!2d-72.8221609345296!3d41.68044368487467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e64b755524299b%3A0x9852597d046d4700!2sNew%20Britain%2C%20CT!5e0!3m2!1sen!2sus!4v1615267623466!5m2!1sen!2sus" 
+        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<h2>Write to Us</h2>
+<div id="form">
+<form method="post" action="mailto:nhiller1@babson.edu">
+    <div>
+        <label for="first name">First Name:</label>
+        <input
+            type = "text"
+            id="first name"
+            name="first name"
+            placeholder="First Name"
+        />
+    </div>
+    <div>
+        <label for="last name">Last Name:</label>
+        <input 
+            type="text"
+            id="last name"
+            name="last name"
+            placeholder="Last Name"
+        />
+    </div>
+    <div>Have you worked with Admill zoo before?</div>
+    <div>
+        <input type="radio" name="review" value="yes">
+        <label>Yes</label>
+        
+        <input type="radio" name="review" value="no">
+        <label>No</label>
+    </div>
+    <div>
+        <textarea
+            id="subject"
+            name="subject"
+            rows="2"
+            cols="25"
+            placeholder=""
+        ></textarea>    
+    </div>
+    <div>
+        <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="25"
+            placeholder="Comments"
+        ></textarea>    
+    </div>
+
+    <div>
+        <input type="submit" value="Submit" name="submit">
+        <input type="reset" value="Cancel" name="cancel">
+    </div>
+</form>
+</div>
+
+<div class="bottomnav">
+    <li class="sitemap"><a class = "sitemap" href="sitemap.html">Sitemap</a></li>
+</div>
+
+</body>
+</html>
