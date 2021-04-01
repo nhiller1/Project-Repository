@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales and Marketing</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         img {
             float: right;
@@ -38,16 +39,45 @@
             float: right;
         }
         .sitemap {
-            color: darkgrey;
-            text-align: center;
-            
+            color: black;
+            display: inline;   
         }
-        .bottomnav {
+        .bottom {
             background: lightgrey;
-            padding-bottom: 3px;
-            padding-top: 3px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-right: 100px;
             text-decoration: none;
             list-style-type: none;
+            margin: 0px;
+            text-align: center;
+        }
+        .sitemap a:hover:not(.active) {
+            color: red;
+        }
+        #credits {
+            float: right;
+        }
+       
+        .img-parts {
+            float: right;
+            margin: 1.6em 30px;
+            border: 10px solid rgb(149, 164, 152);
+            border-bottom: 10px solid rgb(149, 164, 152);
+        }
+        img {
+            float: right;
+        }
+        figcaption {
+            float: bottom;
+            background-color:rgb(149, 164, 152);
+            color:black;
+            text-align: center;
+            border-top: 90px solid rgb(149, 164, 152);
+            margin-top: 200px;
+        }
+        .bottomnav {
+            padding-top: 100px;
         }
     </style>
 
@@ -61,7 +91,7 @@
             <li class="tab"><a href="salesandmarketing.html">Sales and Marketing</a></li>
             <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
             <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
-            <li id="about"><a class = "active" href="contact.html">Contact</a></li>
+            <li id="about"><a class = "active" href="contact.html">Contact Us</a></li>
         </ul>
         </div>
 <h1>Sales and Marketing</h1>
@@ -69,7 +99,17 @@
 <div id="products">
 <p>
     NB Aero’s main purpose is to research OEMs (Original Equipment Manufacturers) in both the a
-    erospace and transportation industries. <img src="products.png" alt="" title="variety of products" width="300"> 
+    erospace and transportation industries. 
+    
+<div>
+    <figure class="img-parts">
+        <img src="products.png" alt="" title="variety of products" width="400"> 
+        <div>
+        <figcaption>These are small machine parts that Admill z.o.o. makes.</figcaption>
+        </div>
+    </figure>
+</div>
+
     As a partnering company with <a href = "admillpoland.html">Admill zoo</a> 
     <!--(link to admill zoo page)-->
     we want to focus on companies within these industries whose goals align 
@@ -105,7 +145,10 @@
         </ul>
     </div>
 <div class="bottomnav">
-    <li class="sitemap"><a class = "sitemap" href="sitemap.html">Sitemap</a></li>
+    <ul class="bottom">
+       <li class="sitemap"><a class = "sitemap" href="sitemap.html">Sitemap</a></li>
+       <li class="sitemap"><a class = "sitemap" href="credits.html">Credits</a></li>
+    </ul>
 </div>
 
 </body>
