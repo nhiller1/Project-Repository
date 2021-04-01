@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Product Development</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <style>
-    .top {
+      .top {
         list-style-type: none;
         margin: 0pt;
         padding: 0pt;
         overflow: hidden;
         background-color: #999999;
-    }
-    .tab, #about {
+      }
+      .tab,
+      #about {
         float: left;
-    }
-    li a {
+      }
+      li a {
         display: block;
         color: white;
         text-align: center;
@@ -24,72 +26,118 @@
         padding-bottom: 14px;
         padding-top: 14px;
         text-decoration: none;
-    }
-    .tab a:hover:not(.active) {
+      }
+      .tab a:hover:not(.active) {
         color: blue;
-    }
-    .active {
+      }
+      .active {
         background-color: red;
-    }
-    #about {
+      }
+      #about {
         float: right;
-    }
-    .sitemap {
-            color: darkgrey;
-            text-align: center;
-         }
-    .bottomnav {
+      }
+      .sitemap {
+        color: black;
+        display: inline;
+      }
+      .bottom {
         background: lightgrey;
-        padding-bottom: 3px;
-        padding-top: 3px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 100px;
         text-decoration: none;
         list-style-type: none;
-        }
-</style>
-</head>
-<body>
+        margin: 0px;
+        text-align: center;
+      }
+      .sitemap a:hover:not(.active) {
+        color: red;
+      }
+      #credits {
+        float: right;
+      }
+      .img-set {
+        float: left;
+        margin: 1.6em 30px;
+        border: 10px solid rgb(149, 164, 152);
+        border-bottom: 10px solid rgb(149, 164, 152);
+      }
+      img {
+        float: left;
+      }
+      .bottomnav {
+        padding-top: 250px;
+      }
+      figcaption {
+        background-color: rgb(149, 164, 152);
+        color: black;
+        text-align: center;
+        border-top: 80px solid rgb(149, 164, 152);
+        margin-top: 200px;
+      }
+    </style>
+  </head>
+  <body>
     <div id="nav">
-        <ul class="top">
-            <li class="tab"><a href="index.html">Home</a></li>
-            <li class="tab"><a href="development.html">New Product Development</a></li>
-            <li class="tab"><a href="salesandmarketing.html">Sales and Marketing</a></li>
-            <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
-            <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
-            <li id="about"><a class = "active" href="contact.html">Contact</a></li>
-        </ul>
-        </div>
+      <ul class="top">
+        <li class="tab"><a href="index.html">Home</a></li>
+        <li class="tab">
+          <a href="development.html">New Product Development</a>
+        </li>
+        <li class="tab">
+          <a href="salesandmarketing.html">Sales and Marketing</a>
+        </li>
+        <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
+        <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
+        <li id="about"><a class="active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
 
     <h1>New Product Development</h1>
-    <hr>
-   <p>
-    Another area in which NB Aero stands apart from its peers is that we will assist in 
-    new product development.  We will begin by developing and in-depth understanding of
-    the design intent and the design constraints of the form, fit and function of the 
-    part.  We will then review the design of the part and develop cost savings ideas from 
-    the manufacturing engineering perspective.  This is  service not offered by our peers.
-   </p> 
+    <hr />
+    <p>
+      Another area in which NB Aero stands apart from its peers is that we will
+      assist in new product development. We will begin by developing and
+      in-depth understanding of the design intent and the design constraints of
+      the form, fit and function of the part. We will then review the design of
+      the part and develop cost savings ideas from the manufacturing engineering
+      perspective. This is service not offered by our peers.
+    </p>
 
-<div>
-    <img src="drills.png" alt="" title="machine parts" width="300">
-</div>
+    <div>
+      <figure class="img-set">
+        <img src="drills.png" alt="" title="machine parts" width="500" />
+        <figcaption>These are drill bits for CNC machines.</figcaption>
+      </figure>
 
-   <p>
-    We have equipment in the U.S. that is a duplicate of the equipment we have in the Admill
-    z.o.o facility.  The U.S. equipment will be utilized for developing new customer products and 
-    cost reduction initiatives.  This gives us the ability to manufacture small lots (short run) of
-    development parts for quick turn-around to the customer.  This flexibility ensures that the 
-    project keeps moving from the onset.  Once the development parts are approved, we can transition 
-    the work overseas (Admill z.o.o) for the high volume production process.   </p>
+      <p>
+        We have equipment in the U.S. that is a duplicate of the equipment we
+        have in the Admill z.o.o facility. The U.S. equipment will be utilized
+        for developing new customer products and cost reduction initiatives.
+        This gives us the ability to manufacture small lots (short run) of
+        development parts for quick turn-around to the customer. This
+        flexibility ensures that the project keeps moving from the onset. Once
+        the development parts are approved, we can transition the work overseas
+        (Admill z.o.o) for the high volume production process.
+      </p>
 
-   
-   <p>
-    The ability to have a short turn around time using U.S. machinery for the first part 
-    approval while using Admill z.o.o for the high-volume will enable a more efficient and
-    cost-effective way of the end-to-end process for our customer.
-   </p>
+      <p id="last">
+        The ability to have a short turn around time using U.S. machinery for
+        the first part approval while using Admill z.o.o for the high-volume
+        will enable a more efficient and cost-effective way of the end-to-end
+        process for our customer.
+      </p>
+    </div>
 
-<div class="bottomnav">
-    <li class="sitemap"><a class = "sitemap" href="sitemap.html">Sitemap</a></li>
-</div>
-</body>
+    <div class="bottomnav">
+      <ul class="bottom">
+        <li class="sitemap">
+          <a class="sitemap" href="sitemap.html">Sitemap</a>
+        </li>
+        <li class="sitemap">
+          <a class="sitemap" href="credits.html">Credits</a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
