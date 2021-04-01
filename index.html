@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         .top {
             list-style-type: none;
@@ -35,16 +36,41 @@
             float: right;
         }
         .sitemap {
-            color: darkgrey;
-            text-align: center;
-            
+            color: black;
+            display: inline;   
         }
-        .bottomnav {
+        .bottom {
             background: lightgrey;
-            padding-bottom: 3px;
-            padding-top: 3px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-right: 100px;
             text-decoration: none;
             list-style-type: none;
+            margin: 0px;
+            text-align: center;
+        }
+        .sitemap a:hover:not(.active) {
+            color: red;
+        }
+        .bottomnav {
+            padding-top: 100px;
+        }
+        #credits {
+            float: right;
+        }
+        #engine {
+            background: url(a320-engine.png) fixed center repeat;
+            border: 10px solid darkgrey;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            margin: 40px;
+        }
+        #engineinside {
+            background-color: rgb(149, 164, 152);
+            padding: 20px 20px;
+            margin: 40px;
+            opacity: 0.9;
+            border: 5px solid darkgrey;
         }
     </style>
 </head>
@@ -57,24 +83,63 @@
         <li class="tab"><a href="salesandmarketing.html">Sales and Marketing</a></li>
         <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
         <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
-        <li id="about"><a class = "active" href="contact.html">Contact</a></li>
+        <li id="about"><a class = "active" href="contact.html">Contact Us</a></li>
     </ul>
     </div>
 
 <h1>NB Aero</h1>
 <hr>
-    <img src="am250-machine-1.jpg" alt="" title="Milling Machine"
-    width="300">
+
+<!--make image the background of the page-->
+<div id="engine">
+    <div id = "engineinside">
+
+<!--<img src="am250-machine-1.jpg" alt="" title="Milling Machine"
+    width="300">--> 
+
 <!--will be a slideshow once we learn javascript-->
     <p id="index">  
-        NB Aero's mission is to serve as a liasion between Admill Spolka z.o.o and potential U.S. 
-        customers. This website showcases the capabilities and facilities of Admill Spolka z.o.o. and 
-        overall what sets us apart from other aerospace manufacturing companies.
+        NB Aero's mission is to serve as a liaison between Admill Spolka z.o.o and its current and 
+        potential U.S. customers. This website showcases the capabilities and facilities of Admill 
+        Spolka z.o.o. and what sets us apart from other aerospace manufacturing companies.
+        To learn more about the specific machines and capabilities of Admill z.o.o. click 
+        <a href="admillpoland.html" target="_blank">here</a>.
     </p>
 
-<!--botton nav for sitemap link-->
-<div class="bottomnav">
-       <li class="sitemap"><a class = "sitemap" href="sitemap.html">Sitemap</a></li>
+    <p>
+        Admill z.o.o. uses cutting edge technology to manufacture parts for commercial jet airplane 
+        engines, such as the Pratt & Whitney Airbus a320 neo engine shown in the background here. Admill
+        z.o.o. produces a wide range of over 900 products, including parts made from stainless steel, 
+        nickel, titanium and aluminum alloys and is a supplier for Pratt & Whitney USA, Pratt & Whitney 
+        Canada, JPB Systeme, ITP Spain, and others. At NB Aero we pride ourselves on coordinating with 
+        Admill z.o.o. to ensure quality products and on time delivery to our customers. Our role is to 
+        facilitate the customer relationship and ensure Admill Spolka z.o.o. exceeds customer expectations
+        for quality, delivery and design coordination. 
+    </p>
+
+    <p>
+        Below is a video of the Pratt & Whitney Airbus a320 engine in action.
+        <div id="enginevid">
+            <iframe id="enginevideo" title="YouTube video player" 
+                 width="560" height="315" src="https://www.youtube.com/embed/QN-wkxG1hD0" frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                 picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </p>
+
+    <p>
+        To inquire more about the specific services we provide, please <a href="contact.html">contact us</a>.
+    </p>
 </div>
+</div>
+
+<!--bottom nav for sitemap and credits link-->
+<div class="bottomnav">
+    <ul class="bottom">
+       <li class="sitemap"><a class = "sitemap" href="sitemap.html">Sitemap</a></li>
+       <li class="sitemap"><a class = "sitemap" href="credits.html">Credits</a></li>
+    </ul>
+</div>
+
 </body>
 </html>
