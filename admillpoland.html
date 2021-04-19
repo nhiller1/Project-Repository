@@ -92,6 +92,7 @@
           <a href="salesandmarketing.html">Sales and Marketing</a>
         </li>
         <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
+        <li class="tab"><a href="quality.html">Quality</a></li>
         <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
         <li id="about"><a class="active" href="contact.html">Contact Us</a></li>
       </ul>
@@ -311,5 +312,13 @@
         </li>
       </ul>
     </div>
+
+    <script>
+      function changeBorder () {
+        console.log("testing...")
+        document.getElementById("facilities").style.borderColor = "black";
+      }
+      document.getElementById("facilities").onmouseover = changeBorder;
+    </script>
   </body>
 </html>
