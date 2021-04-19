@@ -74,18 +74,19 @@
             <li class="tab"><a href="development.html">New Product Development</a></li>
             <li class="tab"><a href="salesandmarketing.html">Sales and Marketing</a></li>
             <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
+            <li class="tab"><a href="quality.html">Quality</a></li>
             <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
             <li id="about"><a class = "active" href="contact.html">Contact Us</a></li>
         </ul>
         </div>
 <h1>Contact Us</h1>
 <hr>
-<h2>Contact Details</h2> 
+<h2>Contact Details:</h2> 
 
 <div class="info"></div>
 <p>
     <div>NB Aero</div>
-    <div>New Britian, CT</div>
+    <div>New Britain, CT</div>
     <div>United States</div>
 
     <div>Email: nbaero@gamil.com</div>
@@ -94,31 +95,31 @@
 </div>
 
 <div id="map">
-<h2>Where to Find Us</h2>
+<h2>Where to Find Us:</h2>
     <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47677.70310773357!2d-72.8221609345296!3d41.68044368487467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e64b755524299b%3A0x9852597d046d4700!2sNew%20Britain%2C%20CT!5e0!3m2!1sen!2sus!4v1615267623466!5m2!1sen!2sus" 
         width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </div>
 
-<h2>Write to Us</h2>
+<h2>Write to Us:</h2>
 <div id="form">
-<form class = "form" method="post" action="mailto:nhiller1@babson.edu">
+<form class = "form" method="post" action="">
     <div>
-        <label for="first name">First Name:</label>
+        <label for="firstname">First Name:</label>
         <input
             type = "text"
-            id="first name"
-            name="first name"
+            id="firstname"
+            name="firstname"
             placeholder="First Name"
         />
     </div>
     <div>
-        <label for="last name">Last Name:</label>
+        <label for="lastname">Last Name:</label>
         <input 
             type="text"
-            id="last name"
-            name="last name"
+            id="lastname"
+            name="lastname"
             placeholder="Last Name"
         />
     </div>
@@ -130,16 +131,16 @@
         <input type="radio" name="review" value="no">
         <label>No</label>
     </div>
-    <div>
+    <div id="Email">
         <textarea
-            id="subject"
-            name="subject"
+            id="Email"
+            name="Email"
             rows="2"
             cols="25"
-            placeholder=""
+            placeholder="Email"
         ></textarea>    
     </div>
-    <div>
+    <div id="comments">
         <textarea
             id="comments"
             name="comments"
@@ -150,7 +151,7 @@
     </div>
 
     <div>
-        <input type="submit" value="Submit" name="submit">
+        <input id = "submit-btn" type="submit" value="Submit" name="submit">
         <input type="reset" value="Cancel" name="cancel">
     </div>
 </form>
@@ -162,5 +163,25 @@
        <li class="sitemap"><a class = "sitemap" href="credits.html">Credits</a></li>
     </ul>
 </div>
+
+<script>
+    function validate() {
+        console.log("testing...")
+        const myForm = document.querySelector("form");
+
+        let firstName = myForm["firstname"].value;
+        let lastName = myForm["lastname"].value;
+
+        if(firstName.length === 0 || lastName.length == "") {
+            alert("Please enter both first and last name")
+         } else {
+
+        }
+    }
+    function styleChange() {
+
+    }
+    document.getElementById("submit-btn").onclick = validate;
+</script>
 </body>
 </html>
