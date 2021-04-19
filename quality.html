@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        .top {
+            list-style-type: none;
+            margin: 0pt;
+            padding: 0pt;
+            overflow: hidden;
+            background-color: #999999;
+        }
+        .tab, #about {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 14px;
+            padding-top: 14px;
+            text-decoration: none;
+        }
+        .tab a:hover:not(.active) {
+            color: blue;
+        }
+        .active {
+            background-color: red;
+        }
+        #about {
+            float: right;
+        }
+        .sitemap {
+            color: black;
+            display: inline;   
+        }
+        .bottom {
+            background: lightgrey;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-right: 100px;
+            text-decoration: none;
+            list-style-type: none;
+            margin: 0px;
+            text-align: center;
+        }
+        .sitemap a:hover:not(.active) {
+            color: red;
+        }
+        .bottomnav {
+            padding-top: 100px;
+        }
+        #credits {
+            float: right;
+        }
+        .certificate{
+            padding-right: 30px;
+        }
+       
+
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+    <ul class="top">
+        <li class="tab"><a href="index.html">Home</a></li>
+        <li class="tab"><a href="development.html">New Product Development</a></li>
+        <li class="tab"><a href="salesandmarketing.html">Sales and Marketing</a></li>
+        <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
+        <li class="tab"><a href="quality.html">Quality</a></li>
+        <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
+        <li id="about"><a class = "active" href="contact.html">Contact Us</a></li>
+    </ul>
+    </div>
+
+    <h1>Quality</h1>
+    <hr>
+
+    <h2>Inspection Machines:</h2>
+    <body id = "slides">
+    
+        <p>
+        <img id = "quality"/>
+        </p>
+
+        <p id="desc">
+        </p>
+    </body>
+
+
+   <script>
+       const slides = [
+        "machine-labratory.png",
+        "XO87-Black.png",
+        "Optical-Comparators.jpeg",
+        "digital-microscope.jpeg",
+       ];
+       const colors = [
+           "rgb(149, 164, 152)"
+       ];
+       const descriptionList = [
+           "Machine Laboratory",
+           "CMM Machine",
+           "Optical Comparators",
+           "Digital Microscope",
+       ];
+
+        const qualityImage = document.getElementById("quality");
+        const d = document.getElementById("desc");
+
+        let counter = 0;
+        let i = 0; 
+
+       function slideShow() {
+           if(i == slides.length){
+               i = 0;
+           }
+           qualityImage.src = slides[i];
+           qualityImage.style.borderColor = colors[i];
+           qualityImage.style.borderStyle = "solid";
+           qualityImage.style.borderWidth = "10px";
+           qualityImage.style.height = "400px";
+           d.innerHTML = 
+            "<b>" +
+            descriptionList[i] 
+            // "<b><br>global counter = " +
+            // counter +
+            // "<b>local counter = " +
+            // i;
+        
+            i++;
+            counter++;
+            setTimeout(slideShow, 5000);
+       }
+
+      
+       document.getElementById("slides").onload = slideShow;
+   </script>
+
+   <body>
+       <p id= "explanation">
+           As a world class provider in aerospace engines, Admill z.o.o. prides themselves
+           on quality being one of their core values.  Partnering with Admill z.o.o., NB Aero
+           aspires to be #1 in quality, deliver and value.  Above is a slide show of 
+           the various state-of-the-art quality inspection machines that Admill z.o.o. has.  
+           Their machine laboratory is comprised of 4 CMM machines, 2 optical scanners 2 optical
+           microscopes, and 1 digital microscope.  These machines help us ensure that the 
+           products our customers are receiving are the made with the highest quality and 
+           precision.  
+       </p>
+
+       <h2>Certificates:</h2>
+
+       <p>
+           Admill z.o.o. has received a number of certificates for approval of production.  These 
+           include: 
+            <ul>
+                <li>Implemented and maintained Quality Management System based
+                    on EN 9100 (AS9100) and EN ISO 9001
+                </li>
+                <li>P&W LCS/MCL approval</li>
+                <li>NATO Commercial and Government Entity Code NCAGE</li>
+                <li>Delegated Quality Customer/Supplier Representative (DQCR/SQR)</li>
+                <li>Polish military license</li>
+            </ul>
+        
+            <div class = "certificate">           
+                <img id = "certificate1" src = "certificate1.png"> 
+                <img id = "certificate2" src = certificate2.png> 
+                <img id = "certificate3" src="certificate3.png"> 
+                <img id = "certificate4" src="certificate4.png">
+            </div>
+       </p>
+       <script>
+        //certificate 1
+        function enlargeImage() {
+           console.log("testing...")
+           const myImg = document.getElementById("certificate1");
+           let w = myImg.width;
+           w = w * 1.5;
+           myImg.width = w;
+        }
+        function reduceImage() {
+            const myImg = document.getElementById("certificate1");
+            let w = myImg.width;
+            w = w / 1.5;
+            myImg.width = w;
+        }
+       document.getElementById("certificate1").onmouseover = enlargeImage;
+       document.getElementById("certificate1").onmouseleave = reduceImage;
+
+       //certificate 2
+       function enlargeImage2() {
+           console.log("testing...")
+           const myImg = document.getElementById("certificate2");
+           let w = myImg.width;
+           w = w * 1.5;
+           myImg.width = w;
+        }
+        function reduceImage2() {
+            const myImg = document.getElementById("certificate2");
+            let w = myImg.width;
+            w = w / 1.5;
+            myImg.width = w;
+        }
+       document.getElementById("certificate2").onmouseover = enlargeImage2;
+       document.getElementById("certificate2").onmouseleave = reduceImage2;
+
+       //certificate 3
+       function enlargeImage3() {
+           console.log("testing...")
+           const myImg = document.getElementById("certificate3");
+           let w = myImg.width;
+           w = w * 1.5;
+           myImg.width = w;
+        }
+        function reduceImage3() {
+            const myImg = document.getElementById("certificate3");
+            let w = myImg.width;
+            w = w / 1.5;
+            myImg.width = w;
+        }
+       document.getElementById("certificate3").onmouseover = enlargeImage3;
+       document.getElementById("certificate3").onmouseleave = reduceImage3;
+
+       //certificate 4
+        function enlargeImage4() {
+           console.log("testing...")
+           const myImg = document.getElementById("certificate4");
+           let w = myImg.width;
+           w = w * 1.5;
+           myImg.width = w;
+        }
+        function reduceImage4() {
+            const myImg = document.getElementById("certificate4");
+            let w = myImg.width;
+            w = w / 1.5;
+            myImg.width = w;
+        }
+       document.getElementById("certificate4").onmouseover = enlargeImage4;
+       document.getElementById("certificate4").onmouseleave = reduceImage4;
+       </script>
+
+<div class="bottomnav">
+    <ul class="bottom">
+       <li class="sitemap"><a class = "sitemap" href="sitemap.html">Sitemap</a></li>
+       <li class="sitemap"><a class = "sitemap" href="credits.html">Credits</a></li>
+    </ul>
+</div>
+   </body>
+   </html>
