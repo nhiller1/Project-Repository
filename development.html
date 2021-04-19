@@ -88,6 +88,7 @@
           <a href="salesandmarketing.html">Sales and Marketing</a>
         </li>
         <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
+        <li class="tab"><a href="quality.html">Quality</a></li>
         <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
         <li id="about"><a class="active" href="contact.html">Contact Us</a></li>
       </ul>
@@ -106,8 +107,8 @@
 
     <div>
       <figure class="img-set">
-        <img src="drills.png" alt="" title="machine parts" width="500" />
-        <figcaption>These are drill bits for CNC machines.</figcaption>
+        <img id = "drills" src="drills.png" alt="" title="machine parts" width="500" />
+        <figcaption id="caption">These are drill bits for CNC machines.</figcaption>
       </figure>
 
       <p>
@@ -139,5 +140,18 @@
         </li>
       </ul>
     </div>
+
+   <script>
+     //on mouse over, change the border background to red
+     function border(){
+       console.log("testing...")
+     document.getElementById("caption").style.color= "blue";
+     }
+     function leave() {
+       document.getElementById("caption").style.color= "black";
+     }
+     document.getElementById("drills").onmouseover = border;
+     document.getElementById("drills").onmouseleave = leave;
+   </script>
   </body>
 </html>
