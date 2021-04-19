@@ -90,6 +90,7 @@
             <li class="tab"><a href="development.html">New Product Development</a></li>
             <li class="tab"><a href="salesandmarketing.html">Sales and Marketing</a></li>
             <li class="tab"><a href="usoffice.html">Other Capabilities</a></li>
+            <li class="tab"><a href="quality.html">Quality</a></li>
             <li class="tab"><a href="admillpoland.html">Admill z.o.o.</a></li>
             <li id="about"><a class = "active" href="contact.html">Contact Us</a></li>
         </ul>
@@ -103,9 +104,9 @@
     
 <div>
     <figure class="img-parts">
-        <img src="products.png" alt="" title="variety of products" width="400"> 
+        <img id = "products" src="products.png" alt="" title="variety of products" width="400"> 
         <div>
-        <figcaption>These are small machine parts that Admill z.o.o. makes.</figcaption>
+        <figcaption id="caption">These are small machine parts that Admill z.o.o. makes.</figcaption>
         </div>
     </figure>
 </div>
@@ -150,6 +151,17 @@
        <li class="sitemap"><a class = "sitemap" href="credits.html">Credits</a></li>
     </ul>
 </div>
+<script>
+    function border(){
+       console.log("testing...")
+     document.getElementById("caption").style.color= "blue";
+     }
+     function leave() {
+       document.getElementById("caption").style.color= "black";
+     }
+     document.getElementById("products").onmouseover = border;
+     document.getElementById("products").onmouseleave = leave;
+</script>
 
 </body>
 </html>
